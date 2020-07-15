@@ -249,26 +249,26 @@ datadef:
 ### 2. 将所写asm文件汇编为bin文件
 
 - 用nasm完成
-- ![nasm截屏](C:\Users\lenovo\Desktop\18340052-何泽-实验1-v1.0\截屏\nasm截屏.PNG)
+- ![nasm截屏](http://www.hz-heze.com/wp-content/uploads/2020/04/nasm%E6%88%AA%E5%B1%8F.png)
 
 ### 3. 创建空白软盘
 
 - 用安装Bochs时一起安装的Bochs Disk Image Creation Tool创建
 - 可以自由选择大小
-- ![创建空白软盘截屏](C:\Users\lenovo\Desktop\18340052-何泽-实验1-v1.0\截屏\创建空白软盘截屏.PNG)
+- ![创建空白软盘截屏](https://www.hz-heze.com/wp-content/uploads/2020/04/%E5%88%9B%E5%BB%BA%E7%A9%BA%E7%99%BD%E8%BD%AF%E7%9B%98%E6%88%AA%E5%B1%8F.png)
 
 ### 4. 将bin文件写入软盘
 
 - 用Cygwin，使用dd命令
-- ![dd截屏](C:\Users\lenovo\Desktop\18340052-何泽-实验1-v1.0\截屏\dd截屏.PNG)
+- ![dd截屏](https://www.hz-heze.com/wp-content/uploads/2020/04/dd%E6%88%AA%E5%B1%8F.png)
 - 若不用dd命令，将文件后缀名将.bin改为.img在一些情况下也是可以的
 
 ### 5. 启动虚拟机
 
 - 创建新的虚拟机，打开VMware Workstation，启动软盘设为刚刚的img文件
-- ![image-20200214195740823](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20200214195740823.png)
+- ![image-20200214195740823](https://www.hz-heze.com/wp-content/uploads/2020/04/4FA48384-DF92-4392-934A-B3A69A5A0592.jpeg)
 - 启动后便可看到预期界面，实验完成
-- ![运行界面截屏](C:\Users\lenovo\Desktop\18340052-何泽-实验1-v1.0\截屏\运行界面截屏.PNG)
+- ![运行界面截屏](https://www.hz-heze.com/wp-content/uploads/2020/04/%E8%BF%90%E8%A1%8C%E7%95%8C%E9%9D%A2%E6%88%AA%E5%B1%8F.png)
 
 ## 五、 实验总结
 
