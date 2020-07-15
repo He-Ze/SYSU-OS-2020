@@ -504,19 +504,19 @@
 
   - 启动`DosBox`，将目录挂载到`DosBox`的D盘并进入
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\5.PNG" alt="5" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/5-1.png" alt="5" style="zoom:80%;" />
 
   - 使用`TCC`
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\tcc.PNG" alt="tcc" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/tcc.png" alt="tcc" style="zoom:80%;" />
 
   - 使用`TASM`
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\4.PNG" alt="4" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/4-1.png" alt="4" style="zoom:80%;" />
 
   - 使用`TLINK`链接
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\com.PNG" alt="com" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/com.png" alt="com" style="zoom:80%;" />
 
 - 剩下的汇编我使用`NASM`编译，并在`Ubuntu`下使用`dd`命令写入软盘
 
@@ -550,7 +550,7 @@
 
   编译：
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\cmake.PNG" alt="cmake" style="zoom: 50%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/cmake.png" alt="cmake" style="zoom: 50%;" />
 
   可见所有的命令都自动执行了。
 
@@ -562,35 +562,35 @@
 
 - 开始界面
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\开始界面.PNG" alt="开始界面" style="zoom: 67%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/%E5%BC%80%E5%A7%8B%E7%95%8C%E9%9D%A2.png" alt="开始界面" style="zoom: 67%;" />
 
 - 输出文件名和大小
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\name size.PNG" alt="name size" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/name-size.png" alt="name size" style="zoom:80%;" />
 
 - 显示时间
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\time.PNG" alt="time" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/time.png" alt="time" style="zoom:80%;" />
 
 - 显示作者
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\author.PNG" alt="author" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/author.png" alt="author" style="zoom:80%;" />
 
 - 计算字母在单词出现次数
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\cal.PNG" alt="cal" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/cal.png" alt="cal" style="zoom:80%;" />
 
 - 大小写转换
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\大小写.PNG" alt="大小写" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/%E5%A4%A7%E5%B0%8F%E5%86%99.png" alt="大小写" style="zoom:80%;" />
 
 - 运行用户程序1
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\run1.PNG" alt="run1" style="zoom: 67%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/run1.png" alt="run1" style="zoom: 67%;" />
 
 - 批处理命令`c.cmd`
 
-  ![ccmd](C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\ccmd.PNG)
+  ![ccmd](https://www.hz-heze.com/wp-content/uploads/2020/05/ccmd.png)
 
 **其余的演示无法用截图展示，详见演示视频**
 
@@ -598,7 +598,7 @@
 
 正常是使用`nm`命令查看，但是我发现`nm`支持查看的文件类型如下：
 
-<img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验3\nm.PNG" alt="nm" style="zoom: 50%;" />
+<img src="https://www.hz-heze.com/wp-content/uploads/2020/05/nm.png" alt="nm" style="zoom: 50%;" />
 
 也就是说`gcc`编译的可以查看但是`tcc`编译的并不支持，所以就没办法查看了。
 
