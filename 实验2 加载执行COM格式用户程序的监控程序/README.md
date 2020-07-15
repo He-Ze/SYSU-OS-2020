@@ -107,7 +107,6 @@
 
 ## 五、实验过程与结果
 
-  ==***（这一部分只写最终结果。完成过程中遇到的问题、错误以及一步步检查问题并不断改进的过程将在下一板块 “六、问题及解决方案” 中详细叙述）***==
 
 ### 1. 能加载用户程序的监控程序
 
@@ -377,21 +376,21 @@ jmp $
 
 - 先用`nasm`对5个程序编译成`com`格式程序
 
-  <img src="D:\桌面\hz\os实验\实验2\11.PNG" alt="11" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/11-1.png" alt="11" style="zoom:80%;" />
 
 - 然后为了将这5个程序连接到一起，我使用了`Ubuntu`下的`cat`命令
 
-<img src="D:\桌面\hz\os实验\实验2\12.PNG" alt="12" style="zoom:80%;" />
+<img src="https://www.hz-heze.com/wp-content/uploads/2020/05/12-1.png" alt="12" style="zoom:80%;" />
 
 - 这样，监控程序就和4个用户程序结合到了一起
 
 - 利用安装`Bochs`时一起安装的`Bochs Disk Image Creation Tool`创建`1.44MB`空白软盘
 
-  <img src="D:\桌面\hz\os实验\实验2\9.PNG" alt="9" style="zoom: 80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/9-1.png" alt="9" style="zoom: 80%;" />
 
 - 使用`dd`命令将`com`程序写入扇区
 
-  <img src="D:\桌面\hz\os实验\实验2\13.PNG" alt="13" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/13-1.png" alt="13" style="zoom:80%;" />
 
 - 然后就可以将这个`img`文件当做自己操作系统的启动软盘运行
 
@@ -399,7 +398,7 @@ jmp $
 
 - 刚运行时显示的`DOS`界面
 
-  <img src="D:\桌面\hz\os实验\实验2\MS-DOS-2020-05-03-20-12-36.png" alt="MS-DOS-2020-05-03-20-12-36" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/MS-DOS-2020-05-03-20-12-36.png" alt="MS-DOS-2020-05-03-20-12-36" style="zoom:80%;" />
 
   成功显示了应有的信息
 
@@ -407,19 +406,19 @@ jmp $
 
   - 按下1
 
-    <img src="D:\桌面\hz\os实验\实验2\MS-DOS-2020-05-03-20-13-11.png" alt="MS-DOS-2020-05-03-20-13-11" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/MS-DOS-2020-05-03-20-13-11.png" alt="MS-DOS-2020-05-03-20-13-11" style="zoom:80%;" />
 
   - 按下2
 
-    <img src="D:\桌面\hz\os实验\实验2\MS-DOS-2020-05-03-20-13-43.png" alt="MS-DOS-2020-05-03-20-13-43" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/MS-DOS-2020-05-03-20-13-43.png" alt="MS-DOS-2020-05-03-20-13-43" style="zoom:80%;" />
 
   - 按下3
 
-    <img src="D:\桌面\hz\os实验\实验2\MS-DOS-2020-05-03-20-13-56.png" alt="MS-DOS-2020-05-03-20-13-56" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/MS-DOS-2020-05-03-20-13-56.png" alt="MS-DOS-2020-05-03-20-13-56" style="zoom:80%;" />
 
   - 按下4
 
-    <img src="D:\桌面\hz\os实验\实验2\MS-DOS-2020-05-03-20-14-09.png" alt="MS-DOS-2020-05-03-20-14-09" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/05/MS-DOS-2020-05-03-20-14-09.png" alt="MS-DOS-2020-05-03-20-14-09" style="zoom:80%;" />
 
 
 
