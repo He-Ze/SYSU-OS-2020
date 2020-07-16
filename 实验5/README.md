@@ -737,7 +737,7 @@ include int.asm
 
   - 使用`TCC`、`TASM`、`TLINK链接`
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\2.PNG" alt="2" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/2-1.png" alt="2" style="zoom:80%;" />
 
 - 剩下的汇编我使用`NASM`编译，并在`Ubuntu`下使用`dd`命令写入软盘
 
@@ -769,7 +769,7 @@ include int.asm
 
   编译：
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\3.PNG" alt="3" style="zoom:50%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/3-1.png" alt="3" style="zoom:50%;" />
 
   可见所有的命令都自动执行了。
 
@@ -777,45 +777,35 @@ include int.asm
 
 - 首界面：
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\5.png" alt="5" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/5.png" alt="5" style="zoom:80%;" />
 
 - 显示文件名、大小信息、时间与姓名学号
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\4.PNG" alt="4" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/4-3.png" alt="4" style="zoom:80%;" />
 
 - 33h中断调用：
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\6.png" alt="6" style="zoom: 80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/6.png" alt="6" style="zoom: 80%;" />
 
-- 34h中断调用：
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\7.png" alt="7" style="zoom:80%;" />
-
-- 35h中断调用：
-
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\8.png" alt="8" style="zoom:80%;" />
-
-- 36h中断调用：
-
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\9.png" alt="9" style="zoom:80%;" />
 
 - 用户程序1（这里只以一为例，二到四的图片就不放了）
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\10.png" alt="10" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/10.png" alt="10" style="zoom:80%;" />
 
 - 进入21h中断即系统调用
 
   - 首界面：
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\19.PNG" alt="19" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/19.png" alt="19" style="zoom:80%;" />
 
   - 1号功能，显示ouch：
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\16.png" alt="16" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/16.png" alt="16" style="zoom:80%;" />
 
   - 大小写转换：
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\20.png" alt="20" style="zoom:80%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/20.png" alt="20" style="zoom:80%;" />
 
 ==**系统调用的调用33-36中断界面与之前一样就不放截图了，其余功能无法用截图展示，详见演示视频**==
 
@@ -823,19 +813,3 @@ include int.asm
 
 3. 使用`Make`，各种命令自动执行
 2. 系统调用设计了9个功能，并且单独分离出来，可进入、退出
-
-## 七、问题及解决方案
-
-1. 首先就是将汇编拆成多个文件之后如何联合编译的问题，因为之前写汇编都是写在一个文件里，这次拆分成多个文件之后不知道如何编译。关于这个我首先是在网上找了一下，发现根本没有相关的解答，所以只能自己去试，我尝试过在tcc命令里将各个文件都写上，试了用空格隔开、用加号连接，发现都不行，即使在主汇编里include也不行，最后试了好多种组合终于发现了正确的编译方法，就是编译命令根本不用写其它的asm文件，只要将被include的文件与主汇编放在一个文件夹里，主汇编include这些文件，tcc命令后面加主汇编即可将所有文件联合编译。
-
-2. 我在实验过程中出现了下面这个问题：
-
-   <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验5\图片\1.PNG" alt="1" style="zoom: 67%;" />
-
-   一开始很懵，完全不知道是哪里出错了才导致的这个问题，后来将整个代码都分析了一遍发现是寄存器的问题，没有保护好，在调用功能号之前先将值压栈之后就没有这个问题了。
-   
-3. 程序在运行的时候，关于21h中断，我在VMWare中有时候可以正常运行，有时候输入功能号之后无法执行程序，会直接返回21h最初的界面，我换了VirtualBox也是一样的结果，这个问题我没有找到原因，但是这只是偶然的情况，大概率还是会正常运行的。
-
-## 八、实验总结
-
-​		这次实验还是挺复杂的，首先就是软中断的调用，如何设计系统调用，这一部分我看了好久的理论知识，熟悉了之后再实现就容易了好多；再就是将之前的一个汇编文件拆分成多个文件，虽然拆的时候遇到了很多的小问题，比如有的函数忘记复制了，有的复制了两遍等等，然后在编译的时候也是遇到了麻烦，但是当这些问题都解决了之后其实作用还是很明显的，不像之前好几百行的代码debug找位置也要花一段时间，现在将各个功能独立出来之后debug就会方便很多，哪个功能出问题了直接去那个文件改就好 ；再就是关于save和restart，这一部分在本次实验是最让我头疼的，关于怎么设计数据结构怎么调用我都看了好久，好在最后都实现了。这次实验给我的感觉还是要细心，在实现的时候一定要时刻注意保护各个寄存器，否则一出问题整个就都崩了。总之，这次试验我更明白了中断的调用与实现，以及中断现场的保护和恢复，这些都会有益于下一个实验。
