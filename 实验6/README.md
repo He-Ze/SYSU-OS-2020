@@ -515,7 +515,7 @@
 
   - 使用`TCC`、`TASM`、`TLINK链接`
 
-    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\1.PNG" alt="1" style="zoom:67%;" />
+    <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/1-2.png" alt="1" style="zoom:67%;" />
 
 - 剩下的汇编我使用`NASM`编译，并在`Ubuntu`下使用`dd`命令写入软盘
 
@@ -547,7 +547,7 @@
 
   编译：
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\3.PNG" alt="3" style="zoom:50%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/3-3.png" alt="3" style="zoom:50%;" />
 
   可见所有的命令都自动执行了。
 
@@ -555,27 +555,27 @@
 
 - 进入后首界面
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\8.png" alt="8" style="zoom:67%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/8-1.png" alt="8" style="zoom:67%;" />
 
 - 显示文件信息和时间
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\9.png" alt="9" style="zoom:67%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/9-1.png" alt="9" style="zoom:67%;" />
 
 - 软中断，这里以`34h`为例：
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\4.png" alt="4" style="zoom:67%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/4-5.png" alt="4" style="zoom:67%;" />
 
 - 系统调用，输出输入字符、大小写转换、二进制转十进制
 
-  <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\2.PNG" alt="2" style="zoom:80%;" />
+  <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/2-3.png" alt="2" style="zoom:80%;" />
 
 - 同时运行用户程序
 
-​	    <img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\5.png" alt="5" style="zoom:67%;" />
+​	    <img src="https://www.hz-heze.com/wp-content/uploads/2020/07/5-2.png" alt="5" style="zoom:67%;" />
 
-​		<img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\6.png" alt="6" style="zoom:67%;" />
+​		<img src="https://www.hz-heze.com/wp-content/uploads/2020/07/7.png" alt="6" style="zoom:67%;" />
 
-​		<img src="C:\Users\03031\iCloudDrive\大二下\操作系统实验\实验6\图片\7.png" alt="7" style="zoom:67%;" />
+
 
 ## 六、创新工作
 
@@ -583,11 +583,6 @@
 
 2. `21h`系统调用除了大小写转换还新加入了二进制、十六进制转十进制的功能
 
-## 七、实验总结
-
-​		这次实验涉及的知识量还是很多的，从进程的模型、进程表这些理论知识，再到如何保护现场，之后如何恢复现场的方法，我刚开始看了很久，也查了很多资料才完全搞懂这里面的知识，但我认为这次试验不像之前可能会有各种各样的小问题，这次只要对相关的理论知识有了充足的了解再去实现就会很容易，虽然可能会比较麻烦，但有了很明确的设计、实现方向再加上之前编程的经验（比如要时刻保护寄存器）之后，只要实现完成了，便基本上没什么问题了，我这次就是这样，虽然花了很多时间学习理论概念，但实现完成后并没有什么大问题，程序运行的也比较好，也没有什么玄学bug。
-
-​		通过这次试验我的收获也蛮多的，对于进程的模型有了很深入的了解。
 
  
 
